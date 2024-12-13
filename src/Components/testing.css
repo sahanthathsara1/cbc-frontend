@@ -1,0 +1,100 @@
+/* General container styling */
+.background {
+    position: relative;
+    width: 450px;
+    height: 350px;
+    border: 10px solid #333; /* Dark border for a more elegant look */
+    border-radius: 15px; /* Rounded corners for the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #f2f2f2, #d9d9d9); /* Light gradient for a modern look */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow around the container */
+}
+
+/* General button styling */
+.opr {
+   
+    justify-content: center;
+    width: 150px;
+    height: 70px;
+    border: none;
+    font-size: 24px;
+    position: relative;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border-radius: 50px; /* Fully rounded button */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    margin: 0 10px; /* Added margin to space out the buttons */
+}
+
+.opr:hover {
+    background-color: #1ee5f0;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Added shadow on hover */
+    animation: pulse 1s infinite;
+}
+
+/* Keyframe for the pulse animation */
+@keyframes pulse {
+    0% {
+        background-color: #45a049;
+    }
+    50% {
+        background-color: #008000;
+    }
+    100% {
+        background-color: #45a049;
+    }
+}
+
+/* Flex container for name buttons in a row */
+.nmbtn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; /* Added space between the h1 and buttons */
+    width: 100%; /* Full width for proper alignment */
+}
+
+.nmbtn {
+    width: 90px;
+    height: 40px;
+    border: none;
+    margin: 8px;
+    font-size: 16px;
+    background-color: #0ea4b5; /* Light teal */
+    color: white;
+    border-radius: 25px; /* Rounded corners for name buttons */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+/* Hover effect for name buttons */
+.nmbtn:hover {
+    background-color: #130404;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+    animation: pulse 1s infinite;
+}
+
+/* Styling for the main heading */
+h1 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600; /* Slightly bolder font for emphasis */
+}
+
+/* Styling for the count display */
+span {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 500;
+}
