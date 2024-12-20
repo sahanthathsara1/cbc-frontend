@@ -1,14 +1,10 @@
-import "./loginPage.css"; // Make sure to add this CSS file for styling
+import { Link } from "react-router-dom";
 
 export default function LoginPage() {
     return (
-        <div className="login-container">
-            <h1>Login Page</h1>
-            <form className="login-form">
-                <input type="text" placeholder="Username" className="input-field" />
-                <input type="password" placeholder="Password" className="input-field" />
-                <button className="login-btn">Login</button>
-            </form>
+        <div>
+
+        <div className="w-10 h-10 bg-blue-500"></div>
         </div>
     );
 }
