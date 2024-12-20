@@ -12,7 +12,8 @@ export default function HomePage() {
             <main className="home-content">
                 <section className="feature">
                     <h2>Sign up now</h2>
-                    <button className="sign">Sign up</button>
+                    <Link className="sign" to="/signup">Sign Up</Link>
+                    {/* <button className="sign">Sign up</button> */}
                 </section>
                 <section className="feature">
                     <h2>Log in</h2>
