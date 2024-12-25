@@ -25,6 +25,7 @@ function App() {
           <Route path="/signup" element={<SignUpPage />} />
 
           <Route path='/admin/*' element={<AdminHomePage />} />
+          
 
 
           <Route path="/*" element={<h1 className="text-center text-red-500">404 Not Found</h1>} />
