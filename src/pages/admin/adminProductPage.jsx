@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function AdminProductPage() {
 
@@ -101,17 +101,27 @@ export default function AdminProductPage() {
     ]);
     console.log(products);
 
-    axios.get("http://localhost:3000/api/products")
-    .then((res) => {
-        console.log(res)
-        
-    
-    
-    }
+useEffect(() => {
+    // Fetch products from the API
+    axios.get('http://localhost:3000/api/products')
+      .then(response => {
+         //setproducts(res.data)//(mehema dammoth meka call wenwa wade ek nisa mehema daanne na api call bara ganaka yanwa hosting krnn amrui)
+    //me nisa thmi useeffect pawicci krnne
+    console.log(res)
+        setproducts(response.data);
 
-                      
-)
-    .catch((err) => console.error(err));
+
+      })
+      .catch(error => {
+        console.error('Error fetching products:', error);
+      });
+  }, []);
+
+    
+        
+       
+    
+
 
     return (
         <div>
