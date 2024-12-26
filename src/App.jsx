@@ -4,10 +4,17 @@ import HomePage from './pages/homePage';
 import LoginPage from './pages/loginPage';
 import SignUpPage from './pages/signUpPage';
 import AdminHomePage from './pages/adminHomePage';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
     <BrowserRouter>
+    <Toaster
+  position="top-right"
+  reverseOrder={false}
+  
+/>
+
       <div>
         {/* Navigation Bar */}
         {/* <nav className="p-4 bg-blue-500 text-white">
