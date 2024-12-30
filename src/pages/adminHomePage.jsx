@@ -5,9 +5,14 @@ import { BiUserCircle } from 'react-icons/bi';
 import { FaProductHunt } from 'react-icons/fa';
 import { FiPackage } from 'react-icons/fi';
 import AdminProductPage from './admin/adminProductPage'; // Import the AdminProductPage
+import AdminProductAdd from './admin/adminProductAdd'; // Import the AdminProductAdd
+
+
+
 
 export default function AdminHomePage() {
     return (
+        <div >
         <div className="bg-slate-500 w-full h-screen flex">
             {/* Sidebar */}
             <div className="w-[300px] h-screen bg-blue-200 flex flex-col justify-center space-y-4 p-4">
@@ -49,10 +54,12 @@ export default function AdminHomePage() {
                     <Route path="/dashboard" element={<h1>Dashboard</h1>} />
                     <Route path="/users" element={<h1>Users</h1>} />
                     <Route path="/products" element={<AdminProductPage />} />
+                    <Route path="/products/addProduct" element={<AdminProductAdd />} />
                     <Route path="/orders" element={<h1>Orders</h1>} />
 
                 </Routes>
             </div>
+        </div>
         </div>
     );
 }
